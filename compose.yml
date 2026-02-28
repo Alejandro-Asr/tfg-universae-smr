@@ -57,7 +57,7 @@ services:
       redis:
         condition: service_healthy
     ports:
-      - "127.0.0.1:5678:5678"
+      - "5678:5678"
     labels:
       - traefik.enable=true
       - traefik.http.routers.n8n.rule=Host(`${SUBDOMAIN}.${DOMAIN_NAME}`)
@@ -81,10 +81,10 @@ services:
       - TZ=${GENERIC_TIMEZONE}
 
       # URL pública detrás de proxy (importante para webhooks)
-      - N8N_HOST=${SUBDOMAIN}.${DOMAIN_NAME}
+      - N8N_HOST=192.168.0.77
       - N8N_PROTOCOL=https
       - N8N_PORT=5678
-      - WEBHOOK_URL=https://${SUBDOMAIN}.${DOMAIN_NAME}/
+      - WEBHOOK_URL=https://192.168.0.77:5678/
       - N8N_PROXY_HOPS=1
 
       # DB
