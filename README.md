@@ -1,3 +1,8 @@
 # Sistema de soporte y automatización con IA
 
-## Proyecto Intermodular de INTELIGENCIA ARTIFICIAL EN SISTEMAS MICROINFORMÁTICOS Y REDES
+## Proyecto Intermodular
+
+### INTELIGENCIA ARTIFICIAL EN SISTEMAS MICROINFORMÁTICOS Y REDES
+
+## Despliegue de solución en entorno producción
+
